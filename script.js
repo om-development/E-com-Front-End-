@@ -2,25 +2,22 @@ const categories = [
   {
     label: 'Women',
     sub: 'Collection',
-    image: 'images/women.png'
+    image: 'Images/women.png'
   },
-
   {
     label: 'Men',
     sub: 'Collection',
-    image: 'images/men.png'
+    image: 'Images/men.png'
   },
-
   {
     label: 'Kid',
     sub: 'Collection',
-    image: 'images/kid.png'
+    image: 'Images/kid.png'
   },
-
   {
     label: 'Baby',
     sub: 'Collection',
-    image: 'images/baby.png'
+    image: 'Images/baby.png'
   }
 ];
 
@@ -38,16 +35,15 @@ const labelEl = document.getElementById('cat-label');
 const cards = categories.map((cat, i) => {
   const el = document.createElement('div');
   el.className = 'card';
- el.innerHTML = `
-  <div class="card-image">
-    <img src="${cat.image}" alt="${cat.label}">
-  </div>
-
-  <div>
-    <div class="card-label">${cat.label}</div>
-    <div class="card-sub">${cat.sub}</div>
-  </div>
-`;
+  el.innerHTML = `
+    <div class="card-image">
+      <img src="${cat.image}" alt="${cat.label}">
+    </div>
+    <div>
+      <div class="card-label">${cat.label}</div>
+      <div class="card-sub">${cat.sub}</div>
+    </div>
+  `;
   el.addEventListener('click', () => goTo(i));
   scene.appendChild(el);
   return el;

@@ -33,17 +33,14 @@ header{
 .nav a{
   display: flex;
   align-items: center;
-
 }
 .nav a{
   text-decoration: none;
   color: blue;
   font-size: 19px;
-
 }
 body{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  
 }
 main{
   display: flex;
@@ -56,7 +53,6 @@ main{
   position: relative;
   width: 50vw;
   height: 50vh;
-  
   background: transparent;
   display: flex;
   flex-direction: column;
@@ -66,18 +62,15 @@ main{
 }
 .container .form-box{
   width: 80%;
-  padding: 40px ;
-  
-  
+  padding: 40px;
 }
 .form-box h2{
   font-size: 2em;
   text-align: center;
-
 }
 .form-box p{
-  font-weight: 50px
-  ;color: grey;
+  font-weight: 500;
+  color: grey;
   text-align: center;
 }
 .input-box{
@@ -101,15 +94,14 @@ main{
 }
 .btn{
   height: 4.5vh;
- border: none;
- border-radius: 20px;
- width: 100%;
- background-color: rgb(78, 183, 232);
- text-align: center;
- color: white;
- font-size: larger;
- font-weight: bolder;
-
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  background-color: rgb(78, 183, 232);
+  text-align: center;
+  color: white;
+  font-size: larger;
+  font-weight: bolder;
 }
 .btn:hover{
   background-color: rgb(65, 106, 211);
@@ -132,7 +124,6 @@ form{
 
 .terms a:hover{
   text-decoration: underline;
-  
 }
 .send-home{
   width: 40vw;
@@ -147,11 +138,9 @@ form{
   padding: 40px;
   box-sizing: border-box;
 
-
   border-radius: 20px;
 
   background: rgba(255,255,255,0.1);
-  
 }
 .visit{
   width: 250px;
@@ -177,7 +166,6 @@ form{
 }
 
 @media (max-width: 768px){
- @media (max-width: 768px){
   main{
     flex-direction: column;
     justify-content: center;
@@ -193,7 +181,7 @@ form{
     width: 90%;
   }
 }
-}
+
 .nav a{
   transition: all 0.3s ease;
   font-weight: bolder;
