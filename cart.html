@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-bar">
+    <div class="nav-left">
+      <div class="logo">
+        <a href="home.html">
+          <img src="Images/logo.png">
+        </a>
+      </div>
+    </div>
+
+    <button class="home-btn" onclick="window.location.href='home.html'">
+  Home
+</button>
+</header>
+
+<main class="cart-page">
+
+  <h1 class="title">Shopping Cart</h1>
+
+  <div class="cart-container">
+
+    <div class="cart-item">
+      <img src="Images/product-27.png">
+
+      <div class="cart-info">
+        <h2>Product 1</h2>
+        <p>$67</p>
+      </div>
+
+      <div class="quantity">
+        <button>-</button>
+        <span>1</span>
+        <button>+</button>
+      </div>
+    </div>
+
+    <div class="cart-item">
+      <img src="Images/product-28.png">
+
+      <div class="cart-info">
+        <h2>Product 2</h2>
+        <p>$67</p>
+      </div>
+
+      <div class="quantity">
+        <button>-</button>
+        <span>1</span>
+        <button>+</button>
+      </div>
+    </div>
+
+    <div class="cart-summary">
+      <h2>Total: $134</h2>
+
+      <button class="checkout-btn">
+        Proceed To Checkout
+      </button>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <div class="foot-detail">
+    <h2>Contact Us</h2>
+    <input type="email" placeholder="Enter Your Email">
+    <button>Send</button>
+    <h5>omdhakal1019@gmail.com</h5>
+  </div>
+
+  <div class="navigations">
+    <a>About</a>
+    <a>Categories</a>
+    <a>Shop</a>
+    <a>Deals</a>
+    <a>Support</a>
+  </div>
+</footer>
+
+</body>
+</html>

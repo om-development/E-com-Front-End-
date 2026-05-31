@@ -1,0 +1,44 @@
+<svg class="hero-bg" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="blob" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bba7ff"/>
+      <stop offset="100%" stop-color="#e9e2ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main blob -->
+  <path
+    d="M540 120C640 80 760 150 760 280C760 420 640 520 500 500C360 480 280 390 300 270C320 160 430 150 540 120Z"
+    fill="url(#blob)"
+    opacity="0.5"
+  />
+
+  <!-- Curvy lines -->
+  <path
+    d="M420 120C520 200 520 350 450 500"
+    stroke="#c7b8ff"
+    stroke-width="2"
+    fill="none"
+  />
+
+  <path
+    d="M650 80C730 180 700 350 620 520"
+    stroke="#d9ceff"
+    stroke-width="2"
+    fill="none"
+  />
+
+  <!-- Dots -->
+  <g fill="#cfc2ff">
+    <circle cx="690" cy="140" r="6"/>
+    <circle cx="720" cy="160" r="6"/>
+    <circle cx="750" cy="180" r="6"/>
+    <circle cx="710" cy="210" r="6"/>
+  </g>
+
+  <!-- Decorative circles -->
+  <circle cx="500" cy="120" r="28" fill="#bba7ff" opacity="0.5"/>
+  <circle cx="670" cy="90" r="20" fill="#7f5cff" opacity="0.8"/>
+
+</svg>

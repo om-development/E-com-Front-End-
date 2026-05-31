@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-com</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="nav-bar">
+      <div class="nav-left">
+        <div class="logo"><a href="#"><img src="Images/logo.png"></a>
+        </div>
+        <div class="links">
+          <a class="categories">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <rect x="1" y="1" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+              <rect x="9" y="1" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+              <rect x="1" y="9" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+              <rect x="9" y="9" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+            Categories
+          </a>
+          <a class="shop"><svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M5 6V4.5a3 3 0 016 0V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              <rect x="2" y="6" width="12" height="8" rx="2" stroke="currentColor" stroke-width="1.5" />
+            </svg>Shop
+          </a>
+          <a class="deal"><svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M2 2h5.5l6.2 6.2a2 2 0 010 2.83l-2.67 2.67a2 2 0 01-2.83 0L2 7.5V2z" stroke="currentColor"
+                stroke-width="1.5" stroke-linejoin="round" />
+              <circle cx="6" cy="6" r="1" fill="currentColor" />
+            </svg>Deals
+          </a>
+          <a class="support"><svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 9V8a5 5 0 0110 0v1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              <rect x="2" y="9" width="3" height="4" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+              <rect x="11" y="9" width="3" height="4" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+            </svg>Support
+          </a>
+        </div>
+
+      </div>
+      <div class="nav-right">
+        <button class="search">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <circle cx="8" cy="8" r="5.5" stroke="currentColor" stroke-width="1.6" />
+            <path d="M13 13l2.5 2.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+          </svg>
+        </button>
+        <button class="cart" onclick="window.location.href='cart.html'"><svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M1 1h2l2.5 9h9l2-6H5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <circle cx="8" cy="15" r="1.2" fill="currentColor" />
+            <circle cx="13" cy="15" r="1.2" fill="currentColor" />
+          </svg></button>
+        <button class="wish"><svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M9 15S2 10.5 2 5.5A4 4 0 019 3.5 4 4 0 0116 5.5C16 10.5 9 15 9 15z" stroke="currentColor"
+              stroke-width="1.6" stroke-linejoin="round" />
+          </svg></button>
+        <button onclick="window.location.href='index.html'" class="account"><svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <circle cx="9" cy="6" r="3.5" stroke="currentColor" stroke-width="1.6" />
+            <path d="M2 16c0-3.31 3.13-6 7-6s7 2.69 7 6" stroke="currentColor" stroke-width="1.6"
+              stroke-linecap="round" />
+          </svg></button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="landing-box">
+      <div class="life">Life is more than sunglasses and hit movies.</div>
+      <div class="women-glass"><img src="Images/women_sunglass.png"></div>
+    </div>
+    <div class="banner-add">
+      <img src="Images/sale_banner.png">
+    </div>
+    <div class="featured">
+      <div class="title">
+        Featured Categories
+      </div>
+      <div class="carousel-wrap">
+        <div class="scene" id="scene"></div>
+        <div class="category-label" id="cat-label">Women</div>
+        <div class="controls">
+          <button class="ctrl-btn" id="prev" aria-label="Previous"><i class="ti ti-chevron-left"></i></button>
+          <div class="dots" id="dots"></div>
+          <button class="ctrl-btn" id="next" aria-label="Next"><i class="ti ti-chevron-right"></i></button>
+        </div>
+      </div>
+
+    </div>
+    <div class="today-best">
+      <div class="title">
+        Today's Best
+      </div>
+      <div class="plant-card">
+
+        <div class="plant-text">
+          <h1>Decorative Plant <br> For Home</h1>
+
+          <p>Starting From</p>
+
+          <h2>$35.00</h2>
+
+          <button><svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M1 1h2l2.5 9h9l2-6H5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <circle cx="8" cy="15" r="1.2" fill="currentColor" />
+            <circle cx="13" cy="15" r="1.2" fill="currentColor" />
+          </svg>
+            View All Items
+          </button>
+        </div>
+
+        <div class="plant-image">
+          <img src="Images/plant.png" alt="">
+        </div>
+
+      </div>
+    </div>
+    <div class="products-home">
+      <div class="explore">
+        <div class="title">
+        Explore Our Products
+      </div>
+      <div class="more">
+        <a href="product.html">View More</a>
+      </div>
+      </div>
+      <div class="products">
+
+  <div class="product-1 grid-1">
+    <div class="product-image">
+      <a href="product-detail.html">
+        <img src="Images/product-27.png">
+      </a>
+    </div>
+
+    <div class="product-title">
+      <div class="pro-name">Product-1</div>
+      <div class="pro-price">67$</div>
+
+      <div class="add-to-cart">
+        <button>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M1 1h2l2.5 9h9l2-6H5" stroke="currentColor" stroke-width="1.6"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="8" cy="15" r="1.2" fill="currentColor" />
+            <circle cx="13" cy="15" r="1.2" fill="currentColor" />
+          </svg>
+          Add To Cart
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-2 grid-1">
+    <div class="product-image">
+      <a href="product-detail.html">
+        <img src="Images/product-28.png">
+      </a>
+    </div>
+
+    <div class="product-title">
+      <div class="pro-name">Product-2</div>
+      <div class="pro-price">67$</div>
+
+      <div class="add-to-cart">
+        <button>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M1 1h2l2.5 9h9l2-6H5" stroke="currentColor" stroke-width="1.6"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="8" cy="15" r="1.2" fill="currentColor" />
+            <circle cx="13" cy="15" r="1.2" fill="currentColor" />
+          </svg>
+          Add To Cart
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-3 grid-1">
+    <div class="product-image">
+      <a href="product-detail.html">
+        <img src="Images/product-32.png">
+      </a>
+    </div>
+
+    <div class="product-title">
+      <div class="pro-name">Product-3</div>
+      <div class="pro-price">67$</div>
+
+      <div class="add-to-cart">
+        <button>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M1 1h2l2.5 9h9l2-6H5" stroke="currentColor" stroke-width="1.6"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="8" cy="15" r="1.2" fill="currentColor" />
+            <circle cx="13" cy="15" r="1.2" fill="currentColor" />
+          </svg>
+          Add To Cart
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-4 grid-1">
+    <div class="product-image">
+      <a href="product-detail.html">
+        <img src="Images/product-28.png">
+      </a>
+    </div>
+
+    <div class="product-title">
+      <div class="pro-name">Product-4</div>
+      <div class="pro-price">67$</div>
+
+      <div class="add-to-cart">
+        <button>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M1 1h2l2.5 9h9l2-6H5" stroke="currentColor" stroke-width="1.6"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="8" cy="15" r="1.2" fill="currentColor" />
+            <circle cx="13" cy="15" r="1.2" fill="currentColor" />
+          </svg>
+          Add To Cart
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>
+    </div>
+    <div class="delivery">
+      <div class="delivery-card">
+    <div class="delivery-text">
+      <span>ALWAYS FREE</span>
+      <h2>Order Pickup</h2>
+      <p>Choose Order Pickup & we'll have it waiting for you inside the store.</p>
+    </div>
+
+    <div class="delivery-image">
+      <img src="Images/delivery_1.png" alt="">
+    </div>
+  </div>
+
+  <div class="delivery-card">
+    <div class="delivery-text">
+      <span>FAST DELIVERY</span>
+      <h2>Same Day Delivery</h2>
+      <p>We will deliver your goods on the same day on your doorstep.</p>
+    </div>
+
+    <div class="delivery-image">
+      <img src="Images/delivery_2.png" alt="">
+    </div>
+    </div>
+  </main>
+  <footer>
+    <div class="foot-detail">
+      <h2>Contact Us</h2>
+      <input type="email" placeholder="Enter Your Email"><button>Send</button>
+      <h5>omdhakal1019@gmail.com</h5>
+    </div>
+    <div class="navigations">
+      <a>About</a>
+      <a>Categories</a>
+      <a>Shop</a>
+      <a>Deals</a>
+      <a>Support</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
